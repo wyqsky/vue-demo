@@ -1,0 +1,46 @@
+html, body, .app{
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'myicon';  /* project id 329789 */
+    src: url('//at.alicdn.com/t/font_329789_mes95oxmcvm42t9.eot');
+    src: url('//at.alicdn.com/t/font_329789_mes95oxmcvm42t9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_329789_mes95oxmcvm42t9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_329789_mes95oxmcvm42t9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_329789_mes95oxmcvm42t9.svg#iconfont') format('svg');
+}
+
+@import './iconfont.css';
+// @import './1px.scss';
+// @import './varibal.scss';
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.app {
+    background-color: #efefef;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+li{
+    list-style: none;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clearfix{
+    zoom:1;
+}
