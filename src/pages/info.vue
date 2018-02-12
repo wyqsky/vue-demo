@@ -1,8 +1,8 @@
 <template>
     <div class="info app">
         <head-bar></head-bar>
-        <h3 @click="open">个人信息页</h3>
-        <h3 @click="setting">设置</h3>
+        <h3 @click="open">点击弹出上拉弹窗</h3>
+        <h3 @click="setting">点击跳到设置页</h3>
         <div class="mask" :class="{animateTop: animate}">
             <span @click="close">X</span>
         </div>
