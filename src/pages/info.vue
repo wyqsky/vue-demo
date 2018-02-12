@@ -22,7 +22,7 @@ export default {
         }
     },
     methods: {
-        open(){
+        open(){ 
             this.animate = true
         },
         close(){
