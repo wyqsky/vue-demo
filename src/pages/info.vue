@@ -11,6 +11,7 @@
 
 <script>
 import headBar from '../component/layout/headBar';
+import { mapState } from 'vuex';
 export default {
     name: 'info',
     components: {
@@ -20,6 +21,14 @@ export default {
         return {
             animate: false
         }
+    },
+    created(){
+        console.log('用户信息',this.testData.name)
+    },
+    computed: {
+        ...mapState('common', {
+            testData: 'testData'
+        })
     },
     methods: {
         open(){ 

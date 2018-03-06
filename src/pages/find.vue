@@ -1,7 +1,9 @@
 <template>
     <div class="find app">
         <h3>发现</h3>
+        <input type="text" v-model="testData.name">
         <!-- <Footer icon-type="icon-zanfill"></Footer> -->
+        <button @click="btn">点击</button>
     </div>
 </template>
 
@@ -23,12 +25,18 @@ export default {
         this.getIsFooter(true)
     },
     computed: {
-
+        ...mapState('common', {
+            testData: 'testData'
+        })
     },
     methods: {
         ...mapActions('common', {
             getIsFooter: 'getIsFooter'
-        })
+        }),
+        btn(){
+            console.log('当前',this.testData.name)
+            this.$router.push('/info');
+        }
     }
 }
 </script>

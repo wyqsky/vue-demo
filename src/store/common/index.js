@@ -2,7 +2,10 @@ import * as type from '../type'
 
 const state = {
     isLoading: false,
-    isFooter: false
+    isFooter: false,
+    testData: {
+        name: '123'
+    }
 }
 
 const getters = {
